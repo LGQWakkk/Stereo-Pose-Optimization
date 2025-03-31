@@ -61,6 +61,8 @@ $$
 \frac{\partial m_c}{\partial scale} &= -\frac{1}{scale^2}{\mathrm{R}_c^w}^T{\mathrm{R}_m^w}m_b
 \end{align}
 $$
+![](output\derv.png)
+
 二维残差对$m_c$求导的部分和大多数视觉里程计一致，这里不再赘述
 
 残差具体定义可参考 projection_factor.h
