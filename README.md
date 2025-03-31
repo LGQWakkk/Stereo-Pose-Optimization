@@ -61,7 +61,7 @@ $$
 \frac{\partial m_c}{\partial scale} &= -\frac{1}{scale^2}{\mathrm{R}_c^w}^T{\mathrm{R}_m^w}m_b
 \end{align}
 $$
-![](output\derv.png)
+![](output/derv.png)
 
 二维残差对$m_c$求导的部分和大多数视觉里程计一致，这里不再赘述
 
@@ -99,7 +99,7 @@ timestamp px1 py1 px2 py2 px3 py3 px4 py4
 
 具体工程详见：[LGQWakkk/MARKER: 四点式手持主动红外信标 视觉惯性采集设备](https://github.com/LGQWakkk/MARKER)
 
-![](output\marker.png)
+![](output/marker.png)
 
 ### 优化结果
 
@@ -182,11 +182,11 @@ Output MARKER Pose
 
 信标坐标系在CAM1中优化结果：
 
-![](output\marker_frame.png)
+![](output/marker_frame.png)
 
 信标坐标系原点：
 
-![](output\marker_origin.png)
+![](output/marker_origin.png)
 
 优化之前相对位姿：
 
