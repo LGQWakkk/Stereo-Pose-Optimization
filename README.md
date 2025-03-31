@@ -50,13 +50,7 @@ $ScaleFactor[1]$：尺度因子
 $$m_c={\mathrm {R}_c^w}^T(\mathrm {R}_m^w\frac{m_b}{scale}+\mathrm {p}_m^w-\mathrm {p}_c^w)$$
 
 Visual Jacobian：
-$$\begin{align}
-\frac{\partial m_c}{\partial \mathrm{q}_m^w} &=-{\mathrm{R}_c^w}^T{\mathrm{R}_m^w}(\frac{m_b}{scale})^{\wedge}\\
-\frac{\partial m_c}{\partial \mathrm{p}_m^w} &= {\mathrm{R}_c^w}^T \\
-\frac{\partial m_c}{\partial \mathrm{q}_c^w} & = \left [ {\mathrm {R}_c^w}^T(\mathrm {R}_m^w\frac{m_b}{scale}+\mathrm {p}_m^w-\mathrm {p}_c^w) \right ]^{\wedge }\\
-\frac{\partial m_c}{\partial \mathrm{p}_c^w} & = -{\mathrm{R}_c^w}^T\\
-\frac{\partial m_c}{\partial scale} &= -\frac{1}{scale^2}{\mathrm{R}_c^w}^T{\mathrm{R}_m^w}m_b
-\end{align}$$
+$$\begin{align} \frac{\partial m_c}{\partial \mathrm{q}_m^w} &=-{\mathrm{R}_c^w}^T{\mathrm{R}_m^w}(\frac{m_b}{scale})^{\wedge}\\ \frac{\partial m_c}{\partial \mathrm{p}_m^w} &= {\mathrm{R}_c^w}^T \\ \frac{\partial m_c}{\partial \mathrm{q}_c^w} & = \left [ {\mathrm {R}_c^w}^T(\mathrm {R}_m^w\frac{m_b}{scale}+\mathrm {p}_m^w-\mathrm {p}_c^w) \right ]^{\wedge }\\ \frac{\partial m_c}{\partial \mathrm{p}_c^w} & = -{\mathrm{R}_c^w}^T\\ \frac{\partial m_c}{\partial scale} &= -\frac{1}{scale^2}{\mathrm{R}_c^w}^T{\mathrm{R}_m^w}m_b \end{align}$$
 二维残差对$m_c$求导的部分和大多数视觉里程计一致，这里不再赘述
 
 残差具体定义可参考 projection_factor.h
