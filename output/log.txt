@@ -1,0 +1,66 @@
+(ACADOS) wakkk@wakkk-virtual-machine:~/CeresProjects/StereoPoseOptimization/Ceres/build$ ./main
+20250331 Camera Pose Optimization
+Load Visual Data
+Visual Data Read Done
+Visual Data Read Done
+Triangulation
+Triangulation Done
+Begin Optimization
+Begin Solve
+
+Solver Summary (v 2.0.0-eigen-(3.4.0)-lapack-eigensparse-no_openmp)
+
+                                     Original                  Reduced
+Parameter blocks                          403                      402
+Parameters                               2815                     2808
+Effective parameters                     2413                     2407
+Residual blocks                          3200                     3200
+Residuals                                6400                     6400
+
+Minimizer                        TRUST_REGION
+
+Dense linear algebra library            EIGEN
+Trust region strategy     LEVENBERG_MARQUARDT
+
+                                        Given                     Used
+Linear solver                        DENSE_QR                 DENSE_QR
+Threads                                     8                        8
+Linear solver ordering              AUTOMATIC                      402
+
+Cost:
+Initial                          6.799694e+00
+Final                            2.924840e-03
+Change                           6.796770e+00
+
+Minimizer iterations                       16
+Successful steps                           11
+Unsuccessful steps                          5
+
+Time (in seconds):
+Preprocessor                         0.238685
+
+  Residual only evaluation           0.123134 (16)
+  Jacobian & residual evaluation     0.626561 (11)
+  Linear solver                    259.126028 (16)
+Minimizer                          260.670821
+
+Postprocessor                        0.000921
+Total                              260.910428
+
+Termination:                      CONVERGENCE (Function tolerance reached. |cost_change|/cost: 1.560248e-07 <= 1.000000e-06)
+
+Done
+Optimization Done
+Scale Factor: 0.418336
+Rc1w_opt: 
+1 0 0
+0 1 0
+0 0 1
+Pc1w_opt: 0 0 0
+Rc2w_opt: 
+  0.999688 -0.0172184  0.0180863
+0.00810031   0.908703   0.417366
+-0.0236215  -0.417089   0.908559
+Pc2w_opt: 0.0145059 -0.978387  0.209445
+Output CAMERA Pose
+Output MARKER Pose
